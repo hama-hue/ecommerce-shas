@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
   // ✅ Enable Next.js's built-in caching for static assets
   staticPageGenerationTimeout: 100,
   compress: true,
-  swcMinify: true,
+  
 
   // ✅ Ignore errors during build
   typescript: { ignoreBuildErrors: true },
