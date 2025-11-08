@@ -1,9 +1,9 @@
-export default {
-  experimental: {
-    cacheComponents: true,
-    inlineCss: true,
-    useCache: true
-  },
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+
+  // ✅ Stable configuration — no experimental flags
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -13,5 +13,7 @@ export default {
         pathname: '/s/files/**'
       }
     ]
-  }
+  },
 };
+
+export default nextConfig;
