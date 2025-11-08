@@ -1,5 +1,4 @@
 
-
 import {
   HIDDEN_PRODUCT_TAG,
   SHOPIFY_GRAPHQL_API_ENDPOINT,
@@ -8,8 +7,6 @@ import {
 import { isShopifyError } from 'lib/type-guards';
 import { ensureStartsWith } from 'lib/utils';
 import {
-  unstable_cacheLife as cacheLife,
-  unstable_cacheTag as cacheTag,
   revalidateTag
 } from 'next/cache';
 import { cookies, headers } from 'next/headers';
@@ -288,9 +285,9 @@ export async function getCart(): Promise<Cart | undefined> {
 export async function getCollection(
   handle: string
 ): Promise<Collection | undefined> {
-  'use cache';
+  /*'use cache';
   cacheTag(TAGS.collections);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyCollectionOperation>({
     query: getCollectionQuery,
@@ -311,9 +308,9 @@ export async function getCollectionProducts({
   reverse?: boolean;
   sortKey?: string;
 }): Promise<Product[]> {
-  'use cache';
+  /*'use cache';
   cacheTag(TAGS.collections, TAGS.products);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyCollectionProductsOperation>({
     query: getCollectionProductsQuery,
@@ -335,9 +332,9 @@ export async function getCollectionProducts({
 }
 
 export async function getCollections(): Promise<Collection[]> {
-  'use cache';
+  /*'use cache';
   cacheTag(TAGS.collections);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyCollectionsOperation>({
     query: getCollectionsQuery
@@ -366,9 +363,9 @@ export async function getCollections(): Promise<Collection[]> {
 }
 
 export async function getMenu(handle: string): Promise<Menu[]> {
-  'use cache';
+ /* 'use cache';
   cacheTag(TAGS.collections);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyMenuOperation>({
     query: getMenuQuery,
@@ -406,9 +403,9 @@ export async function getPages(): Promise<Page[]> {
 }
 
 export async function getProduct(handle: string): Promise<Product | undefined> {
-  'use cache';
+ /* 'use cache';
   cacheTag(TAGS.products);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyProductOperation>({
     query: getProductQuery,
@@ -423,9 +420,9 @@ export async function getProduct(handle: string): Promise<Product | undefined> {
 export async function getProductRecommendations(
   productId: string
 ): Promise<Product[]> {
-  'use cache';
+  /*'use cache';
   cacheTag(TAGS.products);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyProductRecommendationsOperation>({
     query: getProductRecommendationsQuery,
@@ -446,9 +443,9 @@ export async function getProducts({
   reverse?: boolean;
   sortKey?: string;
 }): Promise<Product[]> {
-  'use cache';
+  /*'use cache';
   cacheTag(TAGS.products);
-  cacheLife('days');
+  cacheLife('days');*/
 
   const res = await shopifyFetch<ShopifyProductsOperation>({
     query: getProductsQuery,
