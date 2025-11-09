@@ -1,0 +1,22 @@
+HTTP/1.1 415 Unsupported Media Type
+Date: Sun, 09 Nov 2025 08:36:46 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-sorting-hat-podid: 356
+x-sorting-hat-shopid: 86703145317
+x-storefront-renderer-rendered: 1
+shopify-complexity-score: 300
+set-cookie: _shopify_essential=:AZpnwrpbAAEAFTevmcNWpXiikNxqTPyCWJWMB5D3JIUq5WweRpqY4M5I1kXirj5cFOonRjDE-rV_oC5vntjfVOL4FNerNVl9VASvhFiE7FxqhE7dgroDg9FBJtPwFs6GQyvkexWXBmwPcwfGkP84WoNebdHc0ZrjKGqDFT164Dnn8mJJMdJnR4HBmI34gyWwR2x9qIa50gvS8K099eP6eR-0lPYEyeDiOXmJQRSi_36tq92Of5WnO3k:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+x-frame-options: DENY
+content-security-policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+access-control-allow-origin: *
+x-shopify-api-version: 2025-01
+x-shopid: 86703145317
+x-shardid: 356
+vary: Accept,accept-encoding
+content-language: en
+cache-control: private, no-store
+powered-by: Shopify
+server-timing: processing;dur=17, db;dur=6, asn;desc="55836", edge;desc="MAA", country;desc="IN", servedBy;desc="7n5c", requestID;desc="a3ba8d92-67c2-43fd-a946-33dcaf82f64d-1762677406", _y;desc="45935472-1901-45c0-bba7-e30b31b1401e", _s;desc="2f0e7dba-01cc-4082-8787-9a487fd4e93b"
+x-dc: gcp-asia-southeast1,gcp-us-central1,gcp-us-central1
